@@ -1,10 +1,11 @@
 import random
 def Gussing_number():
     print("Welcome to Gussing the Number Game\n")
+    print("-------------------------------------------------------------------------------")
     print(
     "Game Rules:\n 1.The Gussing the Number must be 1 to 50\n 2.Only Type Numbers\n 3.You have 6 Chance to Guss the Number\n")
+    print("-------------------------------------------------------------------------------")
     computer_num=random.randint(1,50)
-    print(computer_num)
     count=0
     while True:
         user_num=int(input("Guss a Number :"))
@@ -18,7 +19,10 @@ def Gussing_number():
             elif user_num==computer_num:
                 print(f"congratulations You Guss the Number correctly={computer_num}")
                 print(f"you take totaly {count} chance to Guss the Number")
+                break
         else:
-            print(f"You Tryped Your {count} Chance by game rules only 6 chance you not Guss correct number so You Loose the Game")
-            break      
-            
+            print(f"You Tryped Your {count} Chance by game rules only 6 chance you not Guss correct number so YOU LOOSE GAME!-correct Answer={computer_num}")
+            break
+        
+        print("-------------------------------------------------------------------------------")
+#Gussing_number()
